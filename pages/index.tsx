@@ -12,8 +12,8 @@ const Home: NextPage = () => {
         header
       </header>
       <main className="flex w-full flex-1 flex-col items-center justify-center text-9xl  bg-slate-600 text-center">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis est
-        aliquam illum harum dolores, dignissimos itaque voluptate incidunt
+        Body = Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+        est aliquam illum harum dolores, dignissimos itaque voluptate incidunt
         culpa, ipsum aliquid quaerat. Quidem recusandae tempore sit deleniti
         nemo a ab.
       </main>
