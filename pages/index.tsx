@@ -9,7 +9,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="flex h-12 w-full sticky top-0 bottom-0 items-center bg-slate-500 justify-center ">
-        header
+        qa header
       </header>
       <main className="flex w-full flex-1 flex-col items-center justify-center text-9xl  bg-slate-600 text-center">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis est
