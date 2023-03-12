@@ -10,14 +10,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Script
+      <script
         src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"
         // strategy="lazyOnload"
         // onLoad={() =>
         //   console.log(`script loaded correctly, window.FB has been populated`)
         // }
       />
-      <Script
+      <script
         src="script.js"
         // strategy="lazyOnload"
         // onLoad={() =>
