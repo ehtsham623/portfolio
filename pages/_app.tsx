@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import Script from "next/script";
 import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -10,20 +9,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"
-        // strategy="lazyOnload"
-        // onLoad={() =>
-        //   console.log(`script loaded correctly, window.FB has been populated`)
-        // }
-      />
-      <script
-        src="script.js"
-        // strategy="lazyOnload"
-        // onLoad={() =>
-        //   console.log(`script loaded correctly, window.FB has been populated`)
-        // }
-      />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js" />
+      <script src="script.js" />
       <div className="" data-theme="green">
         <Component {...pageProps} />
       </div>

@@ -8,9 +8,9 @@ Date: 08/14/2014
 
 */
 
-var SEPARATION = 35,
-  AMOUNTX = 150,
-  AMOUNTY = 35;
+var SEPARATION = 30,
+  AMOUNTX = 90,
+  AMOUNTY = 30;
 
 var container;
 var camera, scene, renderer;
@@ -42,7 +42,7 @@ function init() {
   }
 
   camera = new THREE.PerspectiveCamera(
-    40,
+    45,
     window.innerWidth / window.innerHeight,
     1,
     10000,
@@ -107,7 +107,7 @@ function render() {
     for (var iy = 0; iy < AMOUNTY; iy++) {
       particle = particles[i++];
       particle.position.y =
-        Math.sin((ix + count) * 0.5) * 15 + Math.sin((iy + count) * 0.5) * 8;
+        Math.sin((ix + count) * 0.2) * 15 + Math.sin((iy + count) * 0.5) * 8;
       particle.scale.x = particle.scale.y = 12;
     }
   }
