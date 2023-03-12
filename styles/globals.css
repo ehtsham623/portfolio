@@ -1,3 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+canvas {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+@layer base {
+  [data-theme="blue"] {
+    --color-primary: 65 105 224;
+  }
+
+  [data-theme="green"] {
+    --color-primary: 101 185 92;
+  }
+
+  [data-theme="yellow"] {
+    --color-primary: 255 152 0;
+  }
+
+  [data-theme="pink"] {
+    --color-primary: 254 94 148;
+  }
+
+  [data-theme="orange"] {
+    --color-primary: 250 91 15;
+  }
+
+  [data-theme="salmon"] {
+    --color-primary: 242 153 118;
+  }
+
+  [data-theme="purple"] {
+    --color-primary: 145 1 238;
+  }
+
+  [data-theme="skyblue"] {
+    --color-primary: 0 212 188;
+  }
+
+  [data-theme="cadetblue"] {
+    --color-primary: 94 157 159;
+  }
+
+  [data-theme="tartorange"] {
+    --color-primary: 235 73 76;
+  }
+
+  [data-theme="olive"] {
+    --color-primary: 101 109 65;
+  }
+
+  [data-theme="red"] {
+    --color-primary: 254 0 0;
+  }
+}
