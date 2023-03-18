@@ -57,7 +57,7 @@ function init() {
   particles = new Array();
 
   var material = new THREE.SpriteCanvasMaterial({
-    color: 0x4395ff, //changes color of particles
+    color: 0x0c497e, //changes color of particles
     program: function (context) {
       context.beginPath();
       context.arc(0, 0, 0.1, 0, 1, true);

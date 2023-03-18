@@ -1,9 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { useEffect } from "react";
 
 const Home: NextPage = () => {
+  useEffect(() => {}, []);
+
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen bg-black">
       <Head>
         <title>dev-Ehtsham</title>
         <link rel="icon" href="/favicon.ico" />
