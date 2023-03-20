@@ -7,12 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        //primary colors
+        //primary colors theme
         primary: "rgb(var(--color-primary) / <alpha-value>)",
         //secondary
         successColor: "#00C300",
         errorColor: "#EB0076",
         warningColor: "#FFB907",
+        //backgrounds
+        background: "#222222",
       },
       fontFamily: {
         body: ["Poppins"],

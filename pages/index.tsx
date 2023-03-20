@@ -1,25 +1,31 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useEffect } from "react";
+import Header from "../components/header";
+import Settings from "../components/setting";
+import store from "../core/redux/store";
+import { useAppSelector } from "../core/redux/hooks";
 
 const Home: NextPage = () => {
-  useEffect(() => {}, []);
-
   return (
-    <div className="flex flex-col h-screen bg-black">
+    <div className="">
       <Head>
         <title>dev-Ehtsham</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="flex h-12 w-full sticky top-0 bottom-0 text-primary items-center  justify-center ">
-        dev header
-      </header>
-      <main className="flex w-full flex-1 flex-col items-center  text-white  justify-center text-9xl  text-center">
-        body
-      </main>
-      <footer className="flex h-12 w-full  sticky top-0 bottom-0   text-white  items-center justify-center ">
-        footer
-      </footer>
+
+      <Settings />
+
+      <div className="flex flex-col h-screen bg-black top-0 bottom-0 ">
+        <div className="sticky top-0 bottom-0 ">
+          <Header />
+        </div>
+        <main className="flex flex-1 h-full w-full flex-col text-primary ">
+          okok
+        </main>
+        <footer className="sticky flex h-12 w-full text-primary  top-0 bottom-0   ">
+          footer
+        </footer>
+      </div>
     </div>
   );
 };
