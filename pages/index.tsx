@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <div className="">
       <Head>
-        <title>dev-Ehtsham</title>
+        <title>Ehtsham</title>
       </Head>
 
       <Settings />

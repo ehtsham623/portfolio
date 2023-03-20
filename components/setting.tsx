@@ -4,7 +4,7 @@ import store from "../core/redux/store";
 import { updateTheme } from "../core/slice/themesSlice";
 
 export default function Settings() {
-  const [isMoved, setIsMoved] = useState(false);
+  const [isMoved, setIsMoved] = useState(true);
   const handleMoveClick = () => {
     setIsMoved((prevState) => !prevState);
   };
