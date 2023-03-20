@@ -1,4 +1,4 @@
-const waves = () => {
+export const waves = () => {
   class ShaderProgram {
     constructor(holder, options = {}) {
       options = Object.assign(
@@ -464,7 +464,7 @@ const waves = () => {
       this.uniforms.time = elapsed;
 
       if (this.count > 0) {
-        gl.clear(gl.COLORBUFFERBIT);
+        gl.clear(gl.COLOR_BUFFER_BIT);
         gl.drawArrays(gl.POINTS, 0, this.count);
       }
 
@@ -557,4 +557,3 @@ const waves = () => {
     },
   });
 };
-export default waves;

@@ -12,15 +12,13 @@ const Home: NextPage = () => {
       <Head>
         <title>Ehtsham</title>
       </Head>
-
       <Settings />
-
       <div className="flex flex-col h-screen bg-black top-0 bottom-0 ">
         <div className="sticky top-0 bottom-0 ">
           <Header />
         </div>
         <main className="flex flex-1 h-full w-full flex-col text-primary ">
-          okok
+          okoksdfs
         </main>
         <footer className="sticky flex h-12 w-full text-primary  top-0 bottom-0   ">
           footer
