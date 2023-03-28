@@ -9,9 +9,7 @@ import { useAppSelector } from "../core/redux/hooks";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    return () => {
-      waves();
-    };
+    waves();
   }, []);
 
   return (
