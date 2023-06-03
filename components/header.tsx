@@ -45,7 +45,7 @@ const Header = () => {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex  sm:flex-1 flex-shrink-0 items-center">
-                  <Link href={indexRoute}>
+                  <Link key={indexRoute} href={indexRoute}>
                     <div className="flex  w-auto h-auto bg-primary rounded-full p-3 lg:hidden justify-center items-center">
                       <img
                         className="h-6 w-6 "
@@ -87,7 +87,7 @@ const Header = () => {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
-                <Link href={item.href}>
+                <Link key={item.href} href={item.href}>
                   <Disclosure.Button
                     key={item.name}
                     as="a"
