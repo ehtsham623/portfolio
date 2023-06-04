@@ -10,6 +10,8 @@ function About() {
           className=" rounded-lg"
           width={320}
           height={320}
+          blurDataURL="Data url"
+          placeholder="blur"
         />
         <div>
           <div>ehtsham ul haq</div>
