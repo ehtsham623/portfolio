@@ -8,7 +8,9 @@ import { useAppSelector } from "../core/redux/hooks";
 const Home: NextPage = () => {
   return (
     <>
-      <div>home</div>
+      <div className="h-full flex flex-col  justify-between">
+        <div>home</div>
+      </div>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
-import Settings from "../components/setting";
-import Header from "../components/header";
+import Settings from "../setting";
+import Header from "../header";
 
 export default function MainLayout({ children }: any) {
   return (
@@ -11,7 +11,7 @@ export default function MainLayout({ children }: any) {
           <div className="sticky top-0 bottom-0 ">
             <Header />
           </div>
-          <main className="flex flex-1 h-max w-full flex-col text-primary">
+          <main className="flex flex-1 h-full w-full flex-col text-primary">
             {children}
           </main>
           <footer className="sticky flex h-12 w-full text-primary  top-0 bottom-0   ">
