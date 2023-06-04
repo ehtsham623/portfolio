@@ -9,6 +9,8 @@ import store from "../core/redux/store";
 import { useAppSelector } from "../core/redux/hooks";
 import MainLayout from "../layouts/mainLayout";
 import Head from "next/head";
+import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
 
 const getFaviconPath = (isDarkMode = false) => {
   return `${
@@ -20,6 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     waves();
   }, []);
+  
   const [faviconHref, setFaviconHref] = useState("/white_eh_black_circle.png");
 
   useEffect(() => {
@@ -28,6 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     matcher.onchange = () => setFaviconHref(getFaviconPath(matcher.matches));
   }, [faviconHref]);
 
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -40,7 +44,18 @@ function MyApp({ Component, pageProps }: AppProps) {
           <ToastContainer />
           <div className="waves" />
           <MainLayout>
-            <Component {...pageProps} />
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.div
+                key={router.pathname}
+                initial={{ y: 25, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25 }}
+                className="h-full"
+              >
+                <Component {...pageProps} />
+              </motion.div>
+            </AnimatePresence>
           </MainLayout>
         </State>
       </Provider>
