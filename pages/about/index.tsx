@@ -12,6 +12,7 @@ function About() {
           height={320}
           blurDataURL="Data url"
           placeholder="blur"
+          priority
         />
         <div>
           <div>ehtsham ul haq</div>
