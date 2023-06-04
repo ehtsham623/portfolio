@@ -1,6 +1,6 @@
 import React from "react";
-import Settings from "../setting";
-import Header from "../header";
+import Settings from "../components/setting";
+import Header from "../components/header";
 
 export default function MainLayout({ children }: any) {
   return (

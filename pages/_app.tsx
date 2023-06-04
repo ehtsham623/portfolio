@@ -7,7 +7,7 @@ import { ToastContainer } from "react-toastify";
 import { Provider } from "react-redux";
 import store from "../core/redux/store";
 import { useAppSelector } from "../core/redux/hooks";
-import MainLayout from "../components/layouts/mainLayout";
+import MainLayout from "../layouts/mainLayout";
 import Head from "next/head";
 
 const getFaviconPath = (isDarkMode = false) => {
