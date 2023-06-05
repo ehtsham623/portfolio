@@ -16,6 +16,8 @@ module.exports = {
         warningColor: "#FFB907",
         //backgrounds
         background: "#222222",
+        //text color
+        textSecondary: "#A2A2A2",
       },
       fontFamily: {
         body: ["Poppins"],
