@@ -14,9 +14,9 @@ export default function MainLayout({ children }: any) {
           <main className="flex flex-1 h-full w-full flex-col text-primary">
             {children}
           </main>
-          <footer className="sticky flex h-12 w-full text-primary  top-0 bottom-0   ">
+          {/* <footer className="sticky flex h-12 w-full text-primary  top-0 bottom-0   ">
             footer
-          </footer>
+          </footer> */}
         </div>
       </div>
     </>
