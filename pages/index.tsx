@@ -9,19 +9,19 @@ import Link from "next/link";
 import { contactRoute } from "../configs/routePaths";
 
 const Home: NextPage = () => {
-  const [comnposeValue, setComnposeValue] = useState("Software engineer");
+  const [composeValue, setComnposeValue] = useState("Software engineer");
 
   useEffect(() => {
     setTimeout(() => {
-      if (comnposeValue == "Software engineer") {
+      if (composeValue == "Software engineer") {
         setComnposeValue("Developer");
-      } else if (comnposeValue == "Developer") {
+      } else if (composeValue == "Developer") {
         setComnposeValue("Freelancer");
       } else {
         setComnposeValue("Software engineer");
       }
     }, 3000);
-  }, [comnposeValue]);
+  }, [composeValue]);
 
   return (
     <>
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
             <div className="text-primary w-auto ">
               <AnimatePresence mode="wait">
                 <motion.div
-                  key={comnposeValue}
+                  key={composeValue}
                   initial={{ scaleY: 0 }}
                   animate={{
                     scaleY: 1,
@@ -46,9 +46,9 @@ const Home: NextPage = () => {
                     scaleY: 0,
                     transition: { duration: 0.2 },
                   }}
-                  className="px-2v text-white"
+                  className="text-white"
                 >
-                  {comnposeValue}
+                  {composeValue}
                 </motion.div>
               </AnimatePresence>
             </div>
