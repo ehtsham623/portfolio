@@ -5,6 +5,8 @@ import Settings from "../components/setting";
 import store from "../core/redux/store";
 import { useAppSelector } from "../core/redux/hooks";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
+import { contactRoute } from "../configs/routePaths";
 
 const Home: NextPage = () => {
   const [comnposeValue, setComnposeValue] = useState("Software engineer");
@@ -51,9 +53,11 @@ const Home: NextPage = () => {
               </AnimatePresence>
             </div>
           </div>
-          <div className="w-fit rounded-full bg-primary  py-3 px-10 font-normal text-white hover:bg-white hover:text-primary">
-            Get in Touch
-          </div>
+          <Link href={contactRoute}>
+            <div className="w-fit rounded-full bg-primary  py-3 px-10 font-normal text-white hover:bg-white hover:text-primary hover:cursor-pointer">
+              Get in Touch
+            </div>
+          </Link>
         </div>
       </div>
     </>

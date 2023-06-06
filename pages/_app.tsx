@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     waves();
   }, []);
-  
+
   const [faviconHref, setFaviconHref] = useState("/white_eh_black_circle.png");
 
   useEffect(() => {
@@ -50,7 +50,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 initial={{ y: 25, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 0.25 }}
+                transition={{ duration: 0.2 }}
                 className="h-full"
               >
                 <Component {...pageProps} />

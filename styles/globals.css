@@ -6,7 +6,9 @@
 body {
   background-color: black;
 }
-
+*::-webkit-scrollbar {
+  display: none;
+}
 .waves {
   position: fixed;
   top: 0px;

@@ -30,7 +30,7 @@ const Header = () => {
     <Disclosure as="nav" className="">
       {({ open }) => (
         <>
-          <div className="mx-auto mt-8 sm:w-10/12 md:w-3/4 px-2 sm:px-6 duration-500 ">
+          <div className="mx-auto pt-8 sm:w-10/12 md:w-3/4 px-2 sm:px-6 bg-black duration-500 ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
