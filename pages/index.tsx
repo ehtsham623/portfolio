@@ -27,11 +27,11 @@ const Home: NextPage = () => {
     <>
       <div className="flex flex-col h-full w-full justify-center items-center text-center">
         <div className="flex flex-col justify-center items-center">
-          <div className="flex flex-col sm:flex-row  sm:space-x-4 text-3xl  sm:text-6xl font-bold">
+          <div className="flex flex-row space-x-2 sm:space-x-4 text-2xl  sm:text-6xl font-bold">
             <div className="text-white"> EHTSHAM</div>
-            <div className="text-primary"> UL HAQ</div>
+            <div className="text-primary truncate">UL HAQ</div>
           </div>
-          <div className="flex flex-col sm:flex-row mb-8 mt-8 font-medium text-2xl space-x-2 self-center text-center justify-start">
+          <div className="flex flex-col sm:flex-row mb-8 mt-8 font-medium text-xl sm:text-2xl space-x-2 self-center text-center justify-start">
             <div className="text-textSecondary"> Composed</div>
             <div className="text-primary w-auto ">
               <AnimatePresence mode="wait">

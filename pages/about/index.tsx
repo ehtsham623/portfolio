@@ -34,8 +34,8 @@ function About() {
             priority
           />
         </div>
-        <div className="flex flex-col ml-4 sm:ml-14 my-4 justify-center items-start self-start">
-          <div className="flex flex-row space-x-2 text-[32px] font-bold">
+        <div className="flex flex-col ml-4 mr-2 sm:ml-14 my-4 justify-center items-start self-start">
+          <div className="flex flex-row space-x-2 text-[32px] font-bold truncate">
             <div className="text-white"> EHTSHAM</div>
             <div className="text-primary"> UL HAQ</div>
           </div>
@@ -62,7 +62,7 @@ function About() {
             </div>
           </div>
           <span className="w-full border border-t-[1.6px] border-b-0 border-spacing-8 border-background border-dashed" />
-          <p className="mt-8 text-textSecondary text-[15px] font-sans font-light leading-6 max-w-md min-w-full mb-8">
+          <p className="mt-8 text-textSecondary text-[15px] font-sans font-light leading-6 max-w-md min-w-full mb-8 ">
             My name is <span className="text-white"> Ehtsham ul haq.</span> I am
             a Software engineer, and I'm very passionate and dedicated to my
             work. With 4 years experience in development, I have acquired the
