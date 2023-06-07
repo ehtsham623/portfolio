@@ -35,9 +35,10 @@ function About() {
           />
         </div>
         <div className="flex flex-col ml-4 mr-2 sm:ml-14 my-4 justify-center items-start self-start">
-          <div className="flex flex-row space-x-2 text-[32px] font-bold truncate">
-            <div className="text-white"> EHTSHAM</div>
-            <div className="text-primary"> UL HAQ</div>
+          <div className="flex flex-row space-x-2 text-[32px] font-bold">
+            <div className="text-white">
+              EHTSHAM <span className="text-primary">UL HAQ</span>
+            </div>
           </div>
           <div className="flex flex-row mb-6 mt-3 font-medium text-lg space-x-2 justify-start">
             <div className="text-textSecondary"> Composed</div>
