@@ -8,7 +8,7 @@ function Portfolio() {
           My <span className="text-primary"> Resume</span>
         </div>
         <span className="w-full border border-t-[1.6px] border-b-0 mt-5 mb-12 border-spacing-8 border-background border-dashed" />
-    
+    resume
       </div>
     </div>
   );
