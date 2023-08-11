@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { portfolioRoute } from "../../configs/routePaths";
 
 function About() {
   const [composeValue, setComnposeValue] = useState("Software engineer");
@@ -73,9 +74,11 @@ function About() {
               Flutter, Nextjs, Reactjs
             </span>
           </p>
-          <div className="w-fit rounded-full bg-primary  py-3 px-10 font-normal text-white hover:bg-white hover:text-primary hover:cursor-pointer">
-            Learn More
-          </div>
+          <Link href={portfolioRoute}>
+            <div className="w-fit rounded-full bg-primary  py-3 px-10 font-normal text-white hover:bg-white hover:text-primary hover:cursor-pointer">
+              Learn More
+            </div>
+          </Link>
         </div>
       </div>
     </div>
