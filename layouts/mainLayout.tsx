@@ -8,7 +8,7 @@ export default function MainLayout({ children }: any) {
       <div className="relative ">
         <Settings />
         <div className="flex flex-col h-screen  top-0 bottom-0 ">
-          <div className="sticky top-0 bottom-0 ">
+          <div className="sticky z-50 top-0 bottom-0 ">
             <Header />
           </div>
           <main className="flex flex-1 h-full w-full flex-col text-primary">
