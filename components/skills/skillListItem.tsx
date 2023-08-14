@@ -18,7 +18,7 @@ function SkillItem(props: skillsInterface) {
         </div>
         <div className="w-full rounded-full h-[10px] bg-background flex items-center">
           <div
-            className={`w-[${props.percentage}%] bg-primary h-[6px] rounded-full mx-[2px]`}
+            className={`w-[${props.percentage.toString()}%] bg-primary h-[6px] rounded-full mx-[2px]`}
           ></div>
         </div>
       </div>
