@@ -9,7 +9,7 @@ import {
   homeRoute,
   aboutRoute,
   portfolioRoute,
-  newsRoute,
+  projectsRoute,
   contactRoute,
 } from "../configs/routePaths";
 
@@ -17,7 +17,7 @@ const navigation = [
   { name: "Home", href: homeRoute },
   { name: "About", href: aboutRoute },
   { name: "Portfolio", href: portfolioRoute },
-  { name: "News", href: newsRoute },
+  { name: "Projects", href: projectsRoute },
   { name: "Contact", href: contactRoute },
 ];
 
