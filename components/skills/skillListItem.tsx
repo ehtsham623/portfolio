@@ -2,6 +2,7 @@ import React from "react";
 interface skillsInterface {
   heading: string;
   percentage: string;
+  width: string;
 }
 
 function SkillItem(props: skillsInterface) {
@@ -18,7 +19,7 @@ function SkillItem(props: skillsInterface) {
         </div>
         <div className="w-full rounded-full h-[10px] bg-background flex items-center">
           <div
-            className={`w-[${props.percentage.toString()}%] bg-primary h-[6px] rounded-full mx-[2px]`}
+            className={`${props.width} bg-primary h-[6px] rounded-full mx-[2px]`}
           ></div>
         </div>
       </div>
