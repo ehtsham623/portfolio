@@ -1,6 +1,7 @@
 import React from "react";
 import Services from "../../components/services/services";
 import Timeline from "../../components/timeline/timeline";
+import Skills from "../../components/skills/skills";
 
 function Portfolio() {
   return (
@@ -9,6 +10,9 @@ function Portfolio() {
         <Services />
         <div className="h-24"></div>
         <Timeline />
+        <div className="h-24"></div>
+        <Skills />
+        <div className="h-24"></div>
       </div>
     </div>
   );

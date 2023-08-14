@@ -1,162 +1,64 @@
 import React from "react";
+import TimelineItem from "./timelineItem";
 
 function Timeline() {
   return (
-    <>
-      <div>
-        <div className="text-[20px] md:text-[24px] font-medium text-white">
-          Experince <span className="text-primary">Timeline</span>
-        </div>
-        <div className="mt-3 mb-16 text-white text-[28px] md:text-4xl font-semibold">
-          Let's walk through my significant career milestones that define my
-          journey.
-        </div>
-
-        <ol className="border-l-2 border-info-100">
-          <li>
-            <div className="flex-start md:flex">
-              <div className="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-white text-info-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-4 w-4"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div className="mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
-                <div className="mb-4 flex justify-between">
-                  <a
-                    href="#!"
-                    className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                  >
-                    New Web Design
-                  </a>
-                </div>
-                <p className="mb-6 text-neutral-700 dark:text-neutral-200">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quisque scelerisque diam non nisi semper, et elementum lorem
-                  ornare. Maecenas placerat facilisis mollis. Duis sagittis
-                  ligula in sodales vehicula.
-                </p>
-                <div className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700">
-                  04 / 02 / 2022
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div className="flex-start md:flex">
-              <div className="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-4 w-4"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div className="mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
-                <div className="mb-4 flex justify-between">
-                  <a
-                    href="#!"
-                    className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                  >
-                    21 000 Job Seekers
-                  </a>
-                  <a
-                    href="#!"
-                    className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                  >
-                    12 / 01 / 2022
-                  </a>
-                </div>
-                <p className="mb-6 text-neutral-700 dark:text-neutral-200">
-                  Libero expedita explicabo eius fugiat quia aspernatur autem
-                  laudantium error architecto recusandae natus sapiente sit nam
-                  eaque, consectetur porro molestiae ipsam an deleniti.
-                </p>
-                <button
-                  type="button"
-                  className="inline-block rounded bg-info px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-info-600 hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-info-600 focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-info-700 active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(84,180,211,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)]"
-                >
-                  Preview
-                </button>
-                <button
-                  type="button"
-                  className="inline-block rounded border-2 border-info px-4 pb-[3px] pt-[4px] text-xs font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
-                >
-                  See demo
-                </button>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div className="flex-start md:flex">
-              <div className="-ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full bg-info-100 text-info-700">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-4 w-4"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </div>
-              <div className="mb-10 ml-6 block max-w-md rounded-lg bg-neutral-50 p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">
-                <div className="mb-4 flex justify-between">
-                  <a
-                    href="#!"
-                    className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                  >
-                    Awesome Employers
-                  </a>
-                  <a
-                    href="#!"
-                    className="text-sm text-info transition duration-150 ease-in-out hover:text-info-600 focus:text-info-600 active:text-info-700"
-                  >
-                    21 / 12 / 2021
-                  </a>
-                </div>
-                <p className="mb-6 text-neutral-700 dark:text-neutral-200">
-                  Voluptatibus temporibus esse illum eum aspernatur, fugiat
-                  suscipit natus! Eum corporis illum nihil officiis tempore.
-                  Excepturi illo natus libero sit doloremque, laborum molestias
-                  rerum pariatur quam ipsam necessitatibus incidunt, explicabo.
-                </p>
-                <button
-                  type="button"
-                  className="inline-block rounded bg-info px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#54b4d3] transition duration-150 ease-in-out hover:bg-info-600 hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:bg-info-600 focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] focus:outline-none focus:ring-0 active:bg-info-700 active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.3),0_4px_18px_0_rgba(84,180,211,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(84,180,211,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(84,180,211,0.2),0_4px_18px_0_rgba(84,180,211,0.1)]"
-                >
-                  Preview
-                </button>
-                <button
-                  type="button"
-                  className="inline-block rounded border-2 border-info px-4 pb-[3px] pt-[4px] text-xs font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
-                >
-                  See demo
-                </button>
-              </div>
-            </div>
-          </li>
-        </ol>
+    <div>
+      <div className="text-[20px] md:text-[24px] font-medium text-white">
+        Experince <span className="text-primary">Timeline</span>
       </div>
-    </>
+      <div className="mt-3 mb-16 text-white text-[28px] md:text-4xl font-semibold">
+        Let's walk through my significant career milestones that define my
+        journey.
+      </div>
+      <div className="flex flex-col md:flex-col lg:flex-row justify-between lg:space-x-16">
+        <div className="border-l-2 border-white">
+          <TimelineItem
+            heading="Software engineer"
+            heading2="Technowis"
+            disciption="I began my journey at Technowis as a software engineer, specializing in Flutter development. Through dedication and skill, I quickly progressed to senior positions, assuming greater responsibilities and directly engaging with clients"
+            time="Sept 2021 - present"
+          />
+
+          <TimelineItem
+            heading="Advanced Web Development"
+            heading2="Udemy"
+            disciption="I gained expertise in React.js and Tailwind CSS. Advancing to Next.js, I achieved mastery and successfully executed multiple dynamic web projects"
+            time="Aug 2022"
+          />
+
+          <TimelineItem
+            heading="Flutter Developer"
+            heading2="Freelancing"
+            disciption="I acquired Flutter expertise through online resources, securing my debut freelance project (MOVITRONIC) in the field. This initial success paved my path to a full-time Flutter developer"
+            time="Jan 2021"
+          />
+        </div>
+
+        <div className="border-l-2 border-white">
+          <TimelineItem
+            heading="Android Developer"
+            heading2="Wapexp"
+            disciption="
+            I completed an Android development course with Wapexp, followed by a successful internship. This experience transitioned into my first job as an Android Developer"
+            time="2020 - 2021"
+          />
+          <TimelineItem
+            heading="Web Developer"
+            heading2="Technolangs"
+            disciption="
+            I enhanced my web development skills by mastering HTML, CSS, and basic SQL techniques. Gaining insights into website functionality, I successfully transformed PSD designs into interactive websites"
+            time="Jul 2019"
+          />
+          <TimelineItem
+            heading="Bachelor's Degree (BSCS)"
+            heading2="GCUF"
+            disciption="I did my Bachelor's Degree in computer science from Government college university Faisalabad.Within this academic exploration, my intrigue for development and coding was sparked"
+            time="2016 - 2020"
+          />
+        </div>
+      </div>
+    </div>
   );
 }
 

@@ -17,7 +17,7 @@ function Services() {
         Providing a diverse range of customized services to cater my clients'
         needs.
       </div>
-      <div className=" grid gap-[30px] lg:grid-cols-3 grid-cols-1 only-md:grid-cols-2">
+      <div className=" grid gap-[30px] md:grid-cols-2 lg:grid-cols-3 grid-cols-1 only-md:grid-cols-2">
         <Service
           serviceIcon={<FaReact className="w-10 h-10 text-white" />}
           color={"bg-blueColor"}
