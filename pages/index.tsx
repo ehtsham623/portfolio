@@ -1,14 +1,10 @@
-import type { NextPage } from "next";
-import { useEffect, useState } from "react";
-import Header from "../components/header";
-import Settings from "../components/setting";
-import store from "../core/redux/store";
-import { useAppSelector } from "../core/redux/hooks";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
-import { contactRoute } from "../configs/routePaths";
+import { useEffect, useState } from "react";
+import { portfolioRoute } from "../configs/routePaths";
 
-const Home: NextPage = () => {
+function About() {
   const [composeValue, setComnposeValue] = useState("Software engineer");
 
   useEffect(() => {
@@ -24,15 +20,28 @@ const Home: NextPage = () => {
   }, [composeValue]);
 
   return (
-    <>
-      <div className="flex flex-col h-full w-full justify-center items-center text-center">
-        <div className="flex flex-col justify-center items-center">
-          <div className="flex flex-row space-x-2 sm:space-x-4 text-2xl  sm:text-6xl font-bold">
+    <div className="flex h-full w-full justify-center items-center">
+      <div className="flex flex-col h-full sm:h-auto sm:flex-row justify-start sm:justify-center items-start">
+        <div className="m-4 sm:w-[360px] sm:h-[360px]">
+          <Image
+            src={"/eht.png"}
+            alt="Picture of the author"
+            className="rounded-lg w-auto h-auto"
+            blurDataURL="Data url"
+            placeholder="blur"
+            width="0"
+            height="0"
+            sizes="100vw"
+            priority
+          />
+        </div>
+        <div className="flex flex-col ml-4 mr-2 sm:ml-14 my-4 justify-center items-start self-start">
+          <div className="flex flex-row space-x-2 text-[32px] font-bold">
             <div className="text-white">
               EHTSHAM <span className="text-primary">UL HAQ</span>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row mb-8 mt-8 font-medium text-xl sm:text-2xl space-x-2 self-center text-center justify-start">
+          <div className="flex flex-row mb-6 mt-3 font-medium text-lg space-x-2 justify-start">
             <div className="text-textSecondary"> Composed</div>
             <div className="text-primary w-auto ">
               <AnimatePresence mode="wait">
@@ -54,15 +63,26 @@ const Home: NextPage = () => {
               </AnimatePresence>
             </div>
           </div>
-          <Link href={contactRoute}>
+          <span className="w-full border border-t-[1.6px] border-b-0 border-spacing-8 border-background border-dashed" />
+          <p className="mt-8 text-textSecondary text-[15px] font-sans font-light leading-6 max-w-md min-w-full mb-8 ">
+            My name is <span className="text-white"> Ehtsham ul haq.</span> I am
+            a Software engineer, and I'm very passionate and dedicated to my
+            work. With 4 years experience in development, I have acquired the
+            skills and knowledge. My key skills are
+            <span className="text-white font-semibold">
+              {" "}
+              Flutter, Nextjs, Reactjs
+            </span>
+          </p>
+          <Link href={portfolioRoute}>
             <div className="w-fit rounded-full bg-primary  py-3 px-10 font-normal text-white hover:bg-white hover:text-primary hover:cursor-pointer">
-              Get in Touch
+              Learn More
             </div>
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
-};
+}
 
-export default Home;
+export default About;

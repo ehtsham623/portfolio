@@ -9,9 +9,9 @@ function Portfolio() {
       <div className="flex flex-col w-full md:w-9/12 mx-5 justify-start sm:justify-start items-start">
         <Services />
         <div className="h-24"></div>
-        <Timeline />
-        <div className="h-24"></div>
         <Skills />
+        <div className="h-24"></div>
+        <Timeline />
         <div className="h-24"></div>
       </div>
     </div>
