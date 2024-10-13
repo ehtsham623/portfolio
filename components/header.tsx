@@ -7,7 +7,6 @@ import { useRouter } from "next/router";
 import {
   indexRoute,
   homeRoute,
-  aboutRoute,
   portfolioRoute,
   projectsRoute,
   contactRoute,
@@ -15,7 +14,6 @@ import {
 
 const navigation = [
   { name: "Home", href: homeRoute },
-  { name: "About", href: aboutRoute },
   { name: "Portfolio", href: portfolioRoute },
   { name: "Projects", href: projectsRoute },
   { name: "Contact", href: contactRoute },

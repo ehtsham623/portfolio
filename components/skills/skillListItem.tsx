@@ -1,29 +1,44 @@
 import React from "react";
+
+interface Logo {
+  title: string;
+  path: string;
+}
+
 interface skillsInterface {
   heading: string;
-  percentage: string;
-  width: string;
+  disc: string;
+  logos: Logo[];
 }
 
 function SkillItem(props: skillsInterface) {
   return (
-    <>
-      <div className="relative mb-5">
-        <div className="flex justify-start mb-1 space-x-4">
-          <span className="text-lg font-medium text-white">
-            {props.heading}
-          </span>
-          <span className="text-xs font-medium text-white bg-primary  py-1.5 px-1.5 rounded-sm ">
-            {props.percentage + "%"}
-          </span>
-        </div>
-        <div className="w-full rounded-full h-[10px] bg-background flex items-center">
-          <div
-            className={`${props.width} bg-primary h-[6px] rounded-full mx-[2px]`}
-          ></div>
-        </div>
+    <div className="bg-background py-8 px-4 ">
+      <div className="flex justify-center items-center space-x-4 mb-6">
+        {props.logos.map((logo, index) => (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            role="img"
+            width={40}
+            height={40}
+            fill="white"
+            aria-label={logo.title}
+            className=""
+          >
+            <path d={logo.path} />
+          </svg>
+        ))}
       </div>
-    </>
+      <div className="flex flex-col justify-center items-center space-y-2">
+        <span className="text-primary text-[20px] truncate font-bold">
+          {props.heading}
+        </span>
+        <span className="text-[16px] text-white dark:text-slate-200 text-center">
+          {props.disc}
+        </span>
+      </div>
+    </div>
   );
 }
 

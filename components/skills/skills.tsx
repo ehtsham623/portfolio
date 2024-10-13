@@ -1,5 +1,24 @@
 import React from "react";
 import SkillItem from "./skillListItem";
+import {
+  siFlutter,
+  siReact,
+  siNextdotjs,
+  siTailwindcss,
+  siMongodb,
+  siVercel,
+  siJavascript,
+  siTypescript,
+  siGithub,
+  siHtml5,
+  siCss3,
+  siCplusplus,
+  siNodedotjs,
+  siMysql,
+  siShadcnui,
+  siAndroid,
+  siIos,
+} from "simple-icons";
 
 function Skills() {
   return (
@@ -8,86 +27,47 @@ function Skills() {
         Coding <span className="text-primary">Skills</span>
       </div>
       <div className="mt-3 mb-16 text-white text-[28px] md:text-4xl font-semibold">
-        Below is a glimpse into my proficiency across a range of coding
-        languages and tools.
+        Below are languages and tools that I am experienced in.
       </div>
-      <div className="flex flex-col sm:flex-col md:flex-row justify-between md:space-x-16">
-        <div className="lg:max-w-md w-full ">
-          <SkillItem
-            key={"Flutter"}
-            heading="Flutter"
-            percentage="100"
-            width="w-[100%]"
-          />
-          <SkillItem
-            key={"React"}
-            heading="React.js"
-            percentage="80"
-            width="w-[80%]"
-          />
-          <SkillItem
-            key={"Next"}
-            heading="Next.js"
-            percentage="90"
-            width="w-[90%]"
-          />
-          <SkillItem
-            key={"Tailwind"}
-            heading="Tailwind css"
-            percentage="100"
-            width="w-[100%]"
-          />
-          <SkillItem
-            key={"MongoDB"}
-            heading="MongoDB"
-            percentage="70"
-            width="w-[70%]"
-          />
-          <SkillItem
-            key={"Vercel"}
-            heading="Vercel"
-            percentage="100"
-            width="w-[100%]"
-          />
-        </div>
-        <div className="w-full lg:max-w-md">
-          <SkillItem
-            key={"JS"}
-            heading="JS/TS"
-            percentage="80"
-            width="w-[80%]"
-          />
-          <SkillItem
-            key={"Git"}
-            heading="Git"
-            percentage="90"
-            width="w-[90%]"
-          />
-          <SkillItem
-            key={"Api"}
-            heading="Api's"
-            percentage="100"
-            width="w-[100%]"
-          />
-          <SkillItem
-            key={"Html"}
-            heading="Html"
-            percentage="100"
-            width="w-[100%]"
-          />
-          <SkillItem
-            key={"Css"}
-            heading="Css"
-            percentage="90"
-            width="w-[90%]"
-          />
-          <SkillItem
-            key={"Java"}
-            heading="Java"
-            percentage="50"
-            width="w-[50%]"
-          />
-        </div>
+      <div className="grid gap-[30px] md:grid-cols-2 lg:grid-cols-3 grid-cols-1 only-md:grid-cols-2">
+        <SkillItem
+          key={"Web"}
+          heading="Web Technologies"
+          disc="I have expertise in HTML and CSS for crafting structured and visually appealing web content. I utilize Tailwind CSS for rapid UI development with utility-first styling and ShadCN to create modern, accessible components."
+          logos={[siHtml5, siCss3, siTailwindcss, siShadcnui]}
+        />
+        <SkillItem
+          key={"Frameworks"}
+          heading="Modern Web Frameworks"
+          disc="I have hands-on experience with leading frameworks such as Next.js, React.js and Node.Js. I develop large-scale applications and integrate design systems, managing complex states to deliver dynamic, interactive user experiences."
+          logos={[siReact, siNextdotjs, siNodedotjs]}
+        />
+        <SkillItem
+          key={"Mobile"}
+          heading="Flutter mobile apps"
+          disc="I have extensive experience working with Flutter to develop mobile applications. I build feature-rich, scalable apps and implement design systems across both iOS and Android platforms."
+          logos={[siFlutter, siAndroid, siIos]}
+        />
+        <SkillItem
+          key={"c"}
+          heading="Core Langauge"
+          disc="I specialize in JavaScript, TypeScript, and C++ as my core programming languages. With JavaScript and TypeScript, I build dynamic, scalable web applications, while C++ allows me to develop high-performance software and system-level solutions."
+          logos={[siJavascript, siTypescript, siCplusplus]}
+        />
+        <SkillItem
+          key={"Databases"}
+          heading="Databases Familiarity"
+          disc="I design and manage databases using SQL and MongoDB, for structured and unstructured data. I build efficient queries and optimize database performance to ensure scalability, and reliability."
+          logos={[siMongodb, siMysql]}
+        />
+        <SkillItem
+          key={"Tools"}
+          heading="Helping Tools"
+          disc="I deploy applications on Vercel, utilizing its seamless integration and fast build times for optimized performance. I also manage code repositories on GitHub, following best practices for version control."
+          logos={[siVercel, siGithub]}
+        />
+
+        <div className="w-full lg:max-w-md"></div>
       </div>
     </div>
   );

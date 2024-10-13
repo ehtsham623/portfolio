@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.tsx", "components/setting.tsx", "components/waves.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index2.tsx", "components/setting.tsx", "components/waves.js"],
   "exclude": ["node_modules"]
 }
