@@ -11,7 +11,7 @@ import {
   siTypescript,
   siGithub,
   siHtml5,
-  siCss3,
+  siCss,
   siCplusplus,
   siNodedotjs,
   siMysql,
@@ -34,7 +34,7 @@ function Skills() {
           key={"Web"}
           heading="Web Technologies"
           disc="I have expertise in HTML and CSS for crafting structured and visually appealing web content. I utilize Tailwind CSS for rapid UI development with utility-first styling and ShadCN to create modern, accessible components."
-          logos={[siHtml5, siCss3, siTailwindcss, siShadcnui]}
+          logos={[siHtml5, siCss, siTailwindcss, siShadcnui]}
         />
         <SkillItem
           key={"Frameworks"}

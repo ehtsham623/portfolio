@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-@tailwind base;
-@tailwind components;
+/* @config "./../tailwind.config.js"; */
+@import "tailwindcss";
 @tailwind utilities;
 
 body {
@@ -28,50 +28,77 @@ canvas {
 
 @layer base {
   [data-theme="blue"] {
-    --color-primary: 65 105 224;
+    --color-primary: rgb(65 105 224);
   }
 
   [data-theme="green"] {
-    --color-primary: 101 185 92;
+    --color-primary: rgb(101 185 92);
   }
 
   [data-theme="yellow"] {
-    --color-primary: 255 152 0;
+    --color-primary: rgb(255 152 0);
   }
 
   [data-theme="pink"] {
-    --color-primary: 254 94 148;
+    --color-primary: rgb(254 94 148);
   }
 
   [data-theme="orange"] {
-    --color-primary: 250 91 15;
+    --color-primary: rgb(250 91 15);
   }
 
   [data-theme="salmon"] {
-    --color-primary: 242 153 118;
+    --color-primary: rgb(242 153 118);
   }
 
   [data-theme="purple"] {
-    --color-primary: 145 1 238;
+    --color-primary: rgb(145 1 238);
   }
 
   [data-theme="skyblue"] {
-    --color-primary: 0 212 188;
+    --color-primary: rgb(0 212 188);
   }
 
   [data-theme="cadetblue"] {
-    --color-primary: 94 157 159;
+    --color-primary: rgb(94 157 159);
   }
 
   [data-theme="tartorange"] {
-    --color-primary: 235 73 76;
+    --color-primary: rgb(235 73 76);
   }
 
   [data-theme="olive"] {
-    --color-primary: 101 109 65;
+    --color-primary: rgb(101 109 65);
   }
 
   [data-theme="red"] {
-    --color-primary: 254 0 0;
+    --color-primary: rgb(254 0 0);
   }
+}
+
+@theme {
+  --font-body: Poppins;
+  --font-sans: Poppins;
+  --font-serif: Poppins;
+  --font-mono: Poppins;
+
+  --color-primary: var(--color-primary);
+  --color-successColor: "#00C300";
+  --color-errorColor: "#EB0076";
+  --color-warningColor: "#FFB907";
+  --color-background: "#222222";
+  --color-textSecondary: "#A2A2A2";
+
+  --color-blueColor: "rgb(65 105 224)";
+  --color-greenColor: "rgb(101 185 92)";
+  --color-yellowColor: "rgb(255 152 0)";
+  --color-pinkColor: "rgb(254 94 148)";
+  --color-orangeColor: "rgb(250 91 15)";
+  --color-salmonColor: "rgb(242 153 118)";
+  --color-purpleColor: "rgb(145 1 238)";
+  --color-skyblueColor: "rgb(0 212 188)";
+  --color-cadetblueColor: "rgb(94 157 159)";
+  --color-tartorangeColor: "rgb(235 73 76)";
+  --color-oliveColor: "rgb(101 109 65)";
+  --color-redColor: "rgb(254 0 0)";
 }

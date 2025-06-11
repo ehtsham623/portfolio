@@ -41,7 +41,6 @@ function About() {
               EHTSHAM <span className="text-primary">UL HAQ</span>
             </div>
           </div>
-          
           <div className="flex flex-row mb-6 mt-3 font-medium text-lg space-x-2 justify-start">
             <div className="text-textSecondary"> Composed</div>
             <div className="text-primary w-auto ">
