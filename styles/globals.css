@@ -83,22 +83,22 @@ canvas {
   --font-mono: Poppins;
 
   --color-primary: var(--color-primary);
-  --color-successColor: "#00C300";
-  --color-errorColor: "#EB0076";
-  --color-warningColor: "#FFB907";
-  --color-background: "#222222";
-  --color-textSecondary: "#A2A2A2";
+  --color-successColor: #00C300;
+  --color-errorColor: #eb0076;
+  --color-warningColor: #ffb907;
+  --color-background: #222222;
+  --color-textSecondary: #a2a2a2;
 
-  --color-blueColor: "rgb(65 105 224)";
-  --color-greenColor: "rgb(101 185 92)";
-  --color-yellowColor: "rgb(255 152 0)";
-  --color-pinkColor: "rgb(254 94 148)";
-  --color-orangeColor: "rgb(250 91 15)";
-  --color-salmonColor: "rgb(242 153 118)";
-  --color-purpleColor: "rgb(145 1 238)";
-  --color-skyblueColor: "rgb(0 212 188)";
-  --color-cadetblueColor: "rgb(94 157 159)";
-  --color-tartorangeColor: "rgb(235 73 76)";
-  --color-oliveColor: "rgb(101 109 65)";
-  --color-redColor: "rgb(254 0 0)";
+  --color-blueColor: rgb(65 105 224);
+  --color-greenColor: rgb(101 185 92);
+  --color-yellowColor: rgb(255 152 0);
+  --color-pinkColor: rgb(254 94 148);
+  --color-orangeColor: rgb(250 91 15);
+  --color-salmonColor: rgb(242 153 118);
+  --color-purpleColor: rgb(145 1 238);
+  --color-skyblueColor: rgb(0 212 188);
+  --color-cadetblueColor: rgb(94 157 159);
+  --color-tartorangeColor: rgb(235 73 76);
+  --color-oliveColor: rgb(101 109 65);
+  --color-redColor: rgb(254 0 0);
 }
