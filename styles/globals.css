@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-/* @config "./../tailwind.config.js"; */
 @import "tailwindcss";
-@tailwind utilities;
+/* @tailwind utilities; */
 
 body {
   background-color: black;
@@ -83,7 +82,7 @@ canvas {
   --font-mono: Poppins;
 
   --color-primary: var(--color-primary);
-  --color-successColor: #00C300;
+  --color-successColor: #00c300;
   --color-errorColor: #eb0076;
   --color-warningColor: #ffb907;
   --color-background: #222222;
