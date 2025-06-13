@@ -17,6 +17,7 @@ function SkillItem(props: skillsInterface) {
       <div className="flex justify-center items-center space-x-4 mb-6">
         {props.logos.map((logo, index) => (
           <svg
+            key={index}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             role="img"
